@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>MAC_Quotation</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Mac-New-Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Mac-New-Logo.png" />
+  </ItemGroup>
+
+</Project>
