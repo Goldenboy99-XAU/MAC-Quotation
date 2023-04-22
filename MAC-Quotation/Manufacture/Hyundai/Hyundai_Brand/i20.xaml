@@ -1,0 +1,35 @@
+﻿<Window x:Class="MAC_Quotation.Manufacture.Hyundai.i20"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MAC_Quotation.Manufacture.Hyundai"
+        mc:Ignorable="d"
+        Title="i20" Height="1000" Width="1000">
+    <Grid>
+        <!-- Image Logo of the Brand -->
+        <Image x:Name="Hyundai_Logo" HorizontalAlignment="Right" Height="124" Margin="0,0,403,754" Source="/Logo/hyundai_logo.png" VerticalAlignment="Bottom" Width="149" Stretch="Fill"/>
+
+        <!-- Button that Navigaes to the Dashboard -->
+        <Button Content="Home" HorizontalAlignment="Left" Height="40" Margin="45,92,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Grid.RowSpan="2"/>
+
+        <!-- Textblock/Label  -->
+        <Label Content="Select Year Model" HorizontalAlignment="Left" Margin="45,277,0,0" VerticalAlignment="Top" Height="54" Width="381" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold"/>
+
+        <!-- ComboBox with items included  -->
+        <ComboBox x:Name="i20_YearComboBox" Margin="45,336,55,0" VerticalAlignment="Top"  Height="30" SelectionChanged="i20_YearComboBox_SelectionChanged">
+            <ComboBoxItem Content="-- Select Year Model --"/>
+            <ComboBoxItem Content="2010 - 2015" />
+            <ComboBoxItem Content="2012 - 2021" />
+            <ComboBoxItem Content="2015 - Current" />
+            <ComboBoxItem Content="2021 - Current" />
+        </ComboBox>
+
+        <!-- ComboBox of Select Engine Number  -->
+        <ComboBox x:Name="myi20EngineComboBox" Margin="50,444,50,0" VerticalAlignment="Top"  Height="30"  Visibility="Collapsed" SelectionChanged="i20_EngineComboBox_SelectionChanged"/>
+
+        <!-- TextBlock/Label of Select Engine Number  -->
+        <TextBlock x:Name="myi20EngineNumber" Text="Select Engine Number" HorizontalAlignment="Left" Margin="50, 385,0,0" VerticalAlignment="Top" Height="54" Width="400" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold" Visibility="Collapsed" />
+
+    </Grid>
+</Window>

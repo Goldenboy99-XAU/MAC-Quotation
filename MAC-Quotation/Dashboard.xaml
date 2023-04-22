@@ -4,9 +4,42 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MAC_Quotation"
-        mc:Ignorable="d"
-        Title="Dashboard" Height="800" Width="800">
+        Height="1000" Width="800">
+
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Source="/Images/Mac-New-Logo.png" Stretch="Fill" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="29" Margin="242,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="521" />
+        <Label Content="Search by Engine Number" HorizontalAlignment="Left" Margin="589,34,0,0" VerticalAlignment="Top" Width="174" Foreground="#FF397EBF" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="693,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.45,0.603" Width="70" Height="21"/>
+
+        <!-- Item list of Models inside the ComboBox -->
+        <StackPanel>
+        <ComboBox x:Name="myManufactureComboBox" Margin="50,294,50,0" VerticalAlignment="Top"  Height="30" SelectionChanged="myManufactureComboBox_SelectionChanged">
+            <ComboBoxItem Content="-- Select a Manufacture --"/>
+            <ComboBoxItem Content="AUDI" />
+            <ComboBoxItem Content="BMW" />
+            <ComboBoxItem Content="Citroen" />
+            <ComboBoxItem Content="Chevrolet" />
+            <ComboBoxItem Content="Datsun" />
+            <ComboBoxItem Content="Ford" />
+            <ComboBoxItem Content="Hyundai" />
+            <ComboBoxItem Content="KIA" />
+            <ComboBoxItem Content="Mazda" />
+            <ComboBoxItem Content="Nissan" />
+            <ComboBoxItem Content="Opel" />
+            <ComboBoxItem Content="Peugeot" />
+            <ComboBoxItem Content="Renault" />
+            <ComboBoxItem Content="Suzuki" />
+            <ComboBoxItem Content="Toyota" />
+            <ComboBoxItem Content="VW" />
+        </ComboBox>
+
+            <TextBlock x:Name="myModel" Text="Select Model" HorizontalAlignment="Left" Margin="50, 10,0,0" VerticalAlignment="Top" Height="54" Width="350" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold" Visibility="Collapsed"/>
+            <ComboBox x:Name="myModelComboBox" Margin="50,10,50,0" VerticalAlignment="Top"  Height="30"  Visibility="Collapsed" SelectionChanged="myModelComboBox_SelectionChanged"/>
+        </StackPanel>
+
+
+
+        <Label Content="Select Manufacture" HorizontalAlignment="Left" Margin="50,235,0,0" VerticalAlignment="Top" Height="54" Width="350" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold"/>
     </Grid>
 </Window>

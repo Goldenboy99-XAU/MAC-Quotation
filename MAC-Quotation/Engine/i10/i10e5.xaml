@@ -1,0 +1,22 @@
+﻿<Window x:Class="MAC_Quotation.Engine.i10.i10e5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MAC_Quotation.Engine.i10"
+        mc:Ignorable="d"
+        Title="i10e5" Height="1000" Width="1000">
+    <Grid>
+        <!-- Button that Navigaes to the Dashboard -->
+        <Button Content="Back" HorizontalAlignment="Left" Height="40" Margin="45,92,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Grid.RowSpan="2"/>
+
+        <!-- Labels for Service and Repair -->
+        <TextBlock x:Name="Repair" HorizontalAlignment="Left" Margin="642,511,0,0" TextWrapping="Wrap" Text="Repair" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold"/>
+        <TextBlock x:Name="CarService" HorizontalAlignment="Left" Margin="204,511,0,0" TextWrapping="Wrap" Text="Car Service" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Foreground="#FF397EBF" FontFamily="Bahnschrift SemiBold"/>
+
+        <!-- Image Button for Service and REpair -->
+        <Image x:Name="i10e5_ServiceBtn"   MouseLeftButtonUp="i10e5_ServiceBtn_Image_MouseLeftButtonUp" Source="/Images/ServiceIcon.png" HorizontalAlignment="Left" Height="200" Margin="204,306,0,0" VerticalAlignment="Top" Width="228"/>
+        <Image x:Name="i10e5_RepairBtn"  MouseLeftButtonUp="i10e5_RepairBtn_Image_MouseLeftButtonUp" HorizontalAlignment="Left" Height="186" Margin="608,306,0,0" Source="/Images/RepairIcon.png" VerticalAlignment="Top" Width="206" Stretch="Fill"/>
+
+    </Grid>
+</Window>

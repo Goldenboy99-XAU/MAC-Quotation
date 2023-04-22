@@ -10,10 +10,40 @@
 
   <ItemGroup>
     <None Remove="Images\Mac-New-Logo.png" />
+    <None Remove="Images\RepairIcon.PNG" />
+    <None Remove="Images\ServiceIcon.PNG" />
+    <None Remove="Logo\Ford_logo.png" />
+    <None Remove="Logo\hyundai_logo.png" />
+    <None Remove="Logo\nissan_logo.png" />
+    <None Remove="Logo\VW_Logo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\Mac-New-Logo.png" />
+    <Resource Include="Images\RepairIcon.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ServiceIcon.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Logo\Ford_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Logo\hyundai_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Logo\nissan_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Logo\VW_Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Manufacture\Audi\Audi_Brand\A5.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
 
 </Project>
